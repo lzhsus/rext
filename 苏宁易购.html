@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link href="css/swiper.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-size: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            width: 100%;
+            padding: 0.06rem 0.1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fbb716;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 0.42rem;
+        }
+        nav>div:nth-of-type(1){
+            width: 0.20rem;
+        }
+        nav>div:nth-of-type(2){
+            border-radius: 0.1rem;
+           position: relative;
+        }
+        nav>div:nth-of-type(2) span{
+            position: absolute;
+            top: 50%;
+            left: 0.1rem;
+            transform: translateY(-50%);
+            display: block;
+            width: 0.15rem;
+            z-index: 1;
+        }
+        nav>div:nth-of-type(2) input{
+            padding-left: 0.3rem ;
+            width: 2.3rem;
+            height: 0.3rem;
+            border-radius: 0.1rem;
+            border: 0 ;
+            background-color: #f8d767;
+            position: relative;
+        }
+        nav>div:nth-of-type(2) input::placeholder{
+            color: #a3a19d;
+            font-size: 0.12rem;
+        }
+        nav>div:nth-of-type(3){
+            width: 0.3rem;
+        }
+        nav img{
+            width: 100%;
+        }
+        .banner{
+            width: 100%;
+            margin-top: 0.42rem; ;
+        }
+        .banner img{
+            width: 100%;
+        }
+       .banner .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+            left: 1rem;
+        }
+        .banner .swiper-pagination-bullet-active{
+            background-color: #eaba06;
+        }
+        .suning{
+            margin-top: 0.1rem;
+            width: 100%;
+        }
+        .suning img{
+            width: 100%;
+        }
+         ul {
+            padding: 0.15rem 0.1rem 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+         li{
+            position: relative;
+            width: 0.71rem;
+        }
+         ul li img{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0.4rem;
+        }
+         ul li span{
+            margin-top: 0.4rem;
+            display: block;
+            text-align: center;
+            font-size: 0.12rem;
+            color: #000;
+        }
+        .fooder{
+            width: 100%;
+           position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+        .fooder ul{
+            padding: 0;
+        }
+        .fooder ul li {
+            padding-bottom: 0.06rem;
+        }
+        .fooder ul li img{
+            width: 0.3rem;
+        }
+    </style>
+    <link rel="stylesheet" href="css/swiper.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div><img src="images/icon_category.png"></div>
+            <div><span><img src="images/icon_search.png"></span><input type="text" placeholder="年终大促销，活力全开"></div>
+            <div><img src="images/icon_cart.png"></div>
+        </nav>
+        <div class="banner">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/banner01.jpg"></div>
+                    <div class="swiper-slide"><img src="images/banner02.jpg"></div>
+                    <div class="swiper-slide"><img src="images/banner03.jpg"></div>
+                    <div class="swiper-slide"><img src="images/banner04.jpg"></div>
+                    <div class="swiper-slide"><img src="images/banner05.jpg"></div>
+                    <div class="swiper-slide"><img src="images/banner06.jpg"></div>
+                    <div class="swiper-slide"><img src="images/banner07.jpg"></div>
+                    <div class="swiper-slide"><img src="images/banner08.jpg"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div>
+            <div class="suning"><img src="images/suning.gif"></div>
+            <ul>
+                <li>
+                    <img src="images/nav01.png">
+                    <span>&nbsp;&nbsp;&nbsp;分类&nbsp;&nbsp;&nbsp;</span>
+                </li>
+                <li><img src="images/nav02.png"> <span>大优惠</span></li>
+                <li><img src="images/nav03.png"> <span>苏宁超市</span></li>
+                <li><img src="images/nav04.png"> <span>红孩子母婴</span></li>
+                <li><img src="images/nav05.png"> <span>爆款手机</span></li>
+            </ul>
+            <ul>
+                <li>
+                    <img src="images/nav06.png">
+                    <span>&nbsp;&nbsp;服装城&nbsp;&nbsp;</span>
+                </li>
+                <li><img src="images/nav07.png"> <span>&nbsp;&nbsp;赚钱&nbsp;&nbsp;</span></li>
+                <li><img src="images/nav08.png"> <span>领云贴</span></li>
+                <li><img src="images/nav09.png"> <span>身边苏宁</span></li>
+                <li><img src="images/nav10.png"> <span>&nbsp;&nbsp;优惠卷&nbsp;&nbsp;</span></li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <div class="fooder">
+            <ul>
+                <li>
+                    <img src="images/tabs01.png">
+                    <span>&nbsp;&nbsp;&nbsp;首页&nbsp;&nbsp;&nbsp;</span>
+                </li>
+                <li><img src="images/tabs02.png"> <span>分类</span></li>
+                <li><img src="images/tabs03.png"> <span>必抢清单</span></li>
+                <li><img src="images/tabs04.png"> <span>我的易购</span></li>
+                <li><img src="images/tabs05.png"> <span>新手大礼包</span></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
+
+<script src="js/jquery-1.12.4.js"></script>
+<script src="js/swiper.min.js"></script>
+<script>
+    $(function () {
+        // 获取当前设备的分辨率
+        var myWidth = window.screen.width;
+        // 设置根节点
+        var rem = myWidth / 320 * 100;
+        document.getElementsByTagName("html")[0].style.fontSize = rem + "px";
+
+        window.onresize = function () {
+// 获取当前设备的分辨率
+            var myWidth = window.screen.Width;
+// 设置根节点
+            var rem = myWidth / 320 * 100;
+            document.getElementsByTagName("html")[0].style.fontSize = rem + "px";
+        }
+        var mySwiper = new Swiper('.swiper-container',{
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            autoplay: true,//可选选项，自动滑动
+            loop:true,
+        })
+    })
+</script>
